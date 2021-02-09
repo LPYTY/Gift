@@ -536,6 +536,7 @@ INT_PTR CALLBACK NameList(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 	{
 	case WM_INITDIALOG:
 		SetDlgItemInt(hDlg, IDC_NUMBER, 10, FALSE);
+		SetDlgItemTextA(hDlg, IDC_NAMELIST, "");
 		return (INT_PTR)TRUE;
 
 	case WM_COMMAND:
